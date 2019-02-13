@@ -1,0 +1,83 @@
+body{
+    background-image: url("img/fontil.png"); /* подключаем картинку на задний фон*/
+    background-position: top;
+}
+header {
+    margin-top: 200px; /* для оцентровки меню посередине экрана */
+    font-family:  'PT Serif Caption', serif, cursive, Arial; /* шрифты первый    основной остальные навсякий случай */
+}
+.run-menu*{    /* сбросили отступы которые могут задавать браузеры*/
+    margin: 0;
+    padding: 0;
+}
+.run-menu ul, /* скрыли маркеры у списков*/
+.run-menu ol{
+    list-style: none;
+}
+.run-menu > ul{  /* отображение стиля по горизонтали, оцентровали*/
+    display: flex;
+    justify-content: center;
+}
+.run-menu > ul li a{  /*отобрали ссылки и сделали блочными элементами */
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+69,bce0ee+100;Blue+Pipe */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 69%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 69%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 69%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */ /*цвет фона */
+    padding: 15px 30px 15px 40px; /* отступы*/
+    font-size: 14px; /* размер шрифта */
+    color: black;
+    text-decoration: none; /* убираем подчеркивание*/
+    text-transform: uppercase; /*пункты заглавными буквами */
+    transition: all 1s ease; /*плавное исчезание*/
+}
+.run-menu > ul li{  /* */
+    position: relative;
+    border-right: 1px solid #b2b3b5; /*для остальных списков тоже разделитель с цветом и шириной */
+}
+.run-menu > ul li > a.i.fa{   /* отобрали иконки по классу отпозиционировали и тд*/
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 20px;
+}
+.run-menu > ul li:first-child{  /* первому из списка ЛИ сделали границу и задали толщину и цвет*/
+    border-left: 1px solid #b2b3b5;
+}
+.run-menu > ul li:last-child{   /* последнему сделала тоже самое*/
+    border-right: 1px solid #b2b3b5;
+}
+.run-menu li a:hover{ /*отбрали ссылки при наведении*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+11,29b8e5+33,b3dced+95,bce0ee+100;Blue+Pipe */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(left, #b3dced 11%, #29b8e5 33%, #b3dced 95%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #b3dced 11%,#29b8e5 33%,#b3dced 95%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #b3dced 11%,#29b8e5 33%,#b3dced 95%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 */
+    color: white ; /*цвет шрифта при наведении*/
+    box-shadow: 1px 5px 10px -5px black; /*тени*/
+    transition: all 0.3s ease; /*плавное появление*/
+}
+.run-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.run-menu li > ul li{
+    border: 1px solid #b2b3b5;
+}
+.run-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+31,29b8e5+58,bce0ee+100 */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(top, #b3dced 31%, #29b8e5 58%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3dced 31%,#29b8e5 58%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3dced 31%,#29b8e5 58%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+}
+.run-menu li:hover > ul{
+    display: block;
+}
